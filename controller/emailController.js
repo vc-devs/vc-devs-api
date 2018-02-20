@@ -22,7 +22,7 @@ function sendMail(req, res, next) {
         from: config.sendAddr,
         to: config.receipt,
         subject: subject,
-        html: '<h1> '+ name + ' | ' + email + '<br/> ' + message + '</h1>'
+        html: config.emailTemplate(name, email, message, subject),
     }, function (error, response) {
         if (error) {
             console.log(error);
