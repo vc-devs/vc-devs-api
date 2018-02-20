@@ -1,9 +1,9 @@
 var config = {}
 
 config.service   = 'Gmail'
-config.password  = 's6g4sdfg5';
-config.sendAddr  = 'mylead.enterprise@gmail.com';
-config.receipt   = 'marcio.hsdl@gmail.com';
+config.password  = 'nautico18';
+config.sendAddr  = 'vestibularcidadao.vc@gmail.com';
+config.receipt   = 'contato@vestibularcidadao.com.br';
 
 
 module.exports = config;
