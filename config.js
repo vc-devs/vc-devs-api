@@ -1,7 +1,7 @@
 var config = {}
 
 config.service   = 'Gmail'
-config.password  = 's6g4sdfg5';
+config.password  = '52021180';
 config.sendAddr  = 'marcio.hsdl@gmail.com';
 config.receipt   = 'marcio.hsdl@gmail.com';
 
