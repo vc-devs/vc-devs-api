@@ -4,7 +4,7 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-
+const mongoose = require('mongoose');
 const email = require('./routes/emailRoute');
 
 const cors = require('cors')
@@ -13,6 +13,7 @@ const app = express();
 //CORS V02
 app.use(cors())
 
+mongoose.connect('mongodb://vc_database:vc_database@ds243768.mlab.com:43768/heroku_dnhx3mcv');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
