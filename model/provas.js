@@ -7,7 +7,7 @@ var ProvaModel = new Schema({
   name: {
     type: String
   },
-  name: {
+  ano: {
     type: Number
   },
   link: {
