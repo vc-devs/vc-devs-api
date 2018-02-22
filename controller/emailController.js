@@ -3,9 +3,9 @@ const emailTemplate = require('./../config');
 
 let config = {}
 
-config.password = '52021180';
-config.sendAddr = 'marcio.hsdl@gmail.com';
-config.receipt  = 'marcio.lima@mangue3.com';
+config.password = 'quick2018';
+config.sendAddr = 'vcemail2018@gmail.com';
+config.receipt  = 'contato@vestibularcidadao.com.br';
 
 var smtpTransport = nodemailer.createTransport({
     host: 'smtp.gmail.com',

@@ -12,4 +12,4 @@ var ImageModel = new Schema({
     collection: 'images'
 });
 
-module.exports = mongoose.model('Image', ImageModel);
+module.exports = mongoose.model('images', ImageModel);

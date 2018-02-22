@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
-var GabaritoModel = new Schema({
+var EditalModel = new Schema({
   name: {
     type: String
   },
@@ -15,7 +15,7 @@ var GabaritoModel = new Schema({
   }
 },
 {
-    collection: 'gabarito'
+    collection: 'edital'
 });
 
-module.exports = mongoose.model('gabarito', GabaritoModel);
+module.exports = mongoose.model('edital', EditalModel);

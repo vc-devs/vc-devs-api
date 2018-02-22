@@ -7,7 +7,7 @@ var ProvaModel = new Schema({
   name: {
     type: String
   },
-  year: {
+  name: {
     type: Number
   },
   link: {
@@ -18,4 +18,4 @@ var ProvaModel = new Schema({
     collection: 'provas'
 });
 
-module.exports = mongoose.model('Prova', ProvaModel);
+module.exports = mongoose.model('provas', ProvaModel);

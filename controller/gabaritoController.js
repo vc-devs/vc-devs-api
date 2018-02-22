@@ -1,11 +1,11 @@
 'use strict';
 const _ = require('lodash');
-const imageModel = require('./../model/imagens');
+const gabaritoModel = require('./../model/gabaritos');
 const mongoose = require('mongoose'),
-    Image = mongoose.model('images');
+    Gabarito = mongoose.model('gabarito');
 
-function getImages(req, res, next) {
-    Image.find( function (err, result) {
+function getGabaritos(req, res, next) {
+    Gabarito.find( function (err, result) {
         if (err) {
             next(err);
         } else {
@@ -18,5 +18,5 @@ function getImages(req, res, next) {
 }
 
 module.exports = {
-    getImages: getImages,
+    getGabaritos: getGabaritos,
 };

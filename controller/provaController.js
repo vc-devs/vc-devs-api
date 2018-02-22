@@ -1,37 +1,11 @@
 'use strict';
 const _ = require('lodash');
+const provaModel = require('./../model/provas');
 const mongoose = require('mongoose'),
-    Prova = mongoose.model('Prova');
+    Prova = mongoose.model('provas');
 
 function getProvas(req, res, next) {
-    Prova.aggregate([{
-        $group: {
-            '_id': req.body.id,
-            'count': {
-                '$sum': 1
-            }
-        }
-    }], function (err, result) {
-        if (err) {
-            next(err);
-        } else {
-            res.json({
-                'result': result
-            });
-        }
-    });
-
-}
-
-function getGabaritos(req, res, next) {
-    Result.aggregate([{
-        $group: {
-            '_id': req.body.id,
-            'count': {
-                '$sum': 1
-            }
-        }
-    }], function (err, result) {
+    Prova.find( function (err, result) {
         if (err) {
             next(err);
         } else {
@@ -44,7 +18,5 @@ function getGabaritos(req, res, next) {
 }
 
 module.exports = {
-    saveResult: saveResult,
-    getData: getData,
-    getResult: getResult
+    getProvas: getProvas,
 };

@@ -5,7 +5,20 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+
 const email = require('./routes/emailRoute');
+
+const prova = require('./routes/provasRoute');
+const provaModel = require('./model/provas');
+
+const gabarito = require('./routes/gabaritosRoute');
+const gabaritoModel = require('./model/gabaritos');
+
+const image = require('./routes/imagesRoute');
+const imageModel = require('./model/imagens');
+
+const edital = require('./routes/editaisRoute');
+const editalModel = require('./model/editais');
 
 const cors = require('cors')
 const app = express();
@@ -29,7 +42,10 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use('/', email);
-
+app.use('/', prova);
+app.use('/', gabarito);
+app.use('/', image);
+app.use('/', edital);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
