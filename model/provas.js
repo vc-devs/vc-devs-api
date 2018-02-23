@@ -4,13 +4,13 @@ var Schema = mongoose.Schema;
 
 
 var ProvaModel = new Schema({
-  name: {
+  name_prova: {
     type: String
   },
-  ano: {
+  ano_prova: {
     type: Number
   },
-  link: {
+  link_prova: {
     type: String
   }
 },

@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 
 var ImageModel = new Schema({
-  link: {
+  link_imagem: {
     type: String
   }
 },

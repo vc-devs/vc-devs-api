@@ -4,13 +4,13 @@ var Schema = mongoose.Schema;
 
 
 var EditalModel = new Schema({
-  name: {
+  name_edital: {
     type: String
   },
-  ano: {
+  ano_edital: {
     type: Number
   },
-  link: {
+  link_edital: {
     type: String
   }
 },

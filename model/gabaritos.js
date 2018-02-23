@@ -4,13 +4,13 @@ var Schema = mongoose.Schema;
 
 
 var GabaritoModel = new Schema({
-  name: {
+  name_gabarito: {
     type: String
   },
-  ano: {
+  ano_gabarito: {
     type: Number
   },
-  link: {
+  link_gabarito: {
     type: String
   }
 },
