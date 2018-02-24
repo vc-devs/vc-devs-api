@@ -20,9 +20,6 @@ let emailTemplate = function (name, email, message, subject) {
                             </td>
                         </tr>
     
-    
-                        
-    
                         <tr style="height: 30px"></tr>
                         <!-- cabeçalho -->
     
@@ -30,7 +27,27 @@ let emailTemplate = function (name, email, message, subject) {
                             <td style="padding: 10px 10px 10px 25px; border-top: 1px solid #084553;">
     
                                 <p style="color: #084553; font-weight:800; text-align:center; font-size: 28px; margin-bottom: 10px!important">` + subject + `</p>
-                                
+                                <div style="margin-top: -5px">
+                                    <table style="width:100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr style="color:#084553">
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                    <tr>
+                                                        <!-- odem de emissão -->
+                                                        <td style="text-align: left; font-weight:600; color: #7f8c8d; padding-top: 8px"></td>
+    
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <!-- preço -->
+                                            <td style="text-align: center; font-size: 25px; font-weight:800; color: #ff7519"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </td>
                         </tr>
     
@@ -40,9 +57,18 @@ let emailTemplate = function (name, email, message, subject) {
                         <tr style="background: #e1e5e8;">
                             <td style="padding: 10px 10px 10px 10px; border-top: 1px solid #084553;">
     
-                                <p style="color: #084553; font-weight:800; text-align:left; font-size: 15px; margin-bottom: 10px!important">De: ` + name + ` </p>
-                                <p style="color: #084553; font-weight:800; text-align:left; font-size: 15px; margin-bottom: 10px!important">E-mail: ` + email + `</p>
-                                
+                                <p style="color: #084553; font-weight:800; text-align:left; font-size: 18px; margin-bottom: 10px!important">De: ` + name + `</p>
+                                <p style="color: #084553; font-weight:800; text-align:left; font-size: 18px; margin-bottom: 10px!important">E-mail: ` + email + `</p>
+                                <div style="margin-top: -5px">
+                                    <table style="width:100%" cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr style="color:#084553">
+    
+                                            <!-- preço -->
+                                            <td style="text-align: center; font-weight:600; color: #7f8c8d; padding-top: 8px"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </td>
                         </tr>
@@ -61,7 +87,7 @@ let emailTemplate = function (name, email, message, subject) {
                                     <!-- cabeçalho -->
                                     <tr style="background: #084553;">
                                         <td style="padding: 10px 10px 10px 30px; border-top-right-radius: 5px;border-top-left-radius: 5px;">
-                                            <p style="color: #fff; padding:0; margin: 0; font-weight:800; text-align:left; font-size: 25px;">Mensagem:</p>
+                                            <p style="color: #fff; padding:0; margin: 0; font-weight:800; text-align:left; font-size: 28px;">Mensagem</p>
                                         </td>
                                     </tr>
     
@@ -70,30 +96,18 @@ let emailTemplate = function (name, email, message, subject) {
                                         <td style="border-right: 1px solid #d8dcde; border-left: 1px solid #d8dcde;">
                                             <table style="width: 100%;" cellspacing="0" cellpadding="0" border="0">
                                                 <tbody>
-    
+                                                
                                                 <!-- adultos -->
                                                 <tr>
                                                     <td style="padding: 5px 20px 5px 25px; width: 100%;">
                                                         <table style="margin:auto; padding-top: 5%;padding-bottom: 5%;width:100%" class="m_-5258102743783239414mce-item-table" cellspacing="0"
                                                                cellpadding="0" border="0">
                                                             <tbody>
-                                                            
-                                                                     ` +  message + `                                           
     
-    
-                                                            </tbody>
-                                                        </table>
+                                                            ` +  message + `
+                                                </tr>
                                                     </td>
-                                                </tr>
-    
-    
-                                                    <!-- espaçamento rigth -->
-                                                    <td style="border-right:1px solid #d8dcde" width="30"></td>
-    
-    
-                                                </tr>
-    
-    
+                                                    
                                                 </tbody>
                                             </table>
                                         </td>
