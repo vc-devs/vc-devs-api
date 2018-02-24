@@ -5,7 +5,7 @@ let config = {}
 
 config.password = 'quick2018';
 config.sendAddr = 'vcemail2018@gmail.com';
-config.receipt  = 'contato@vestibularcidadao.com.br';
+config.receipt  = 'vestibularcidadao.vc@gmail.com';
 
 var smtpTransport = nodemailer.createTransport({
     host: 'smtp.gmail.com',
