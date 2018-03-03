@@ -1,27 +1,27 @@
-const express = require('express');
-const path = require('path');
-const favicon = require('serve-favicon');
-const logger = require('morgan');
+const express      = require('express');
+const path         = require('path');
+const favicon      = require('serve-favicon');
+const logger       = require('morgan');
 const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+const bodyParser   = require('body-parser');
+const mongoose     = require('mongoose');
 
 const email = require('./routes/emailRoute');
 
-const prova = require('./routes/provasRoute');
+const prova      = require('./routes/provasRoute');
 const provaModel = require('./model/provas');
 
-const gabarito = require('./routes/gabaritosRoute');
+const gabarito      = require('./routes/gabaritosRoute');
 const gabaritoModel = require('./model/gabaritos');
 
-const image = require('./routes/imagesRoute');
+const image      = require('./routes/imagesRoute');
 const imageModel = require('./model/imagens');
 
-const edital = require('./routes/editaisRoute');
+const edital      = require('./routes/editaisRoute');
 const editalModel = require('./model/editais');
 
 const cors = require('cors')
-const app = express();
+const app  = express();
 
 //CORS V02
 app.use(cors())

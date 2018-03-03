@@ -1,7 +1,7 @@
 'use strict';
-const _ = require('lodash');
+
 const imageModel = require('./../model/imagens');
-const mongoose = require('mongoose'),
+const mongoose   = require('mongoose'),
     Image = mongoose.model('images');
 
 function getImages(req, res, next) {

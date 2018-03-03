@@ -138,7 +138,18 @@ let emailTemplate = function (name, email, message, subject) {
     return body;
 }
 
-let emailInscricao= function (id, name, email, document, tel) {
+let emailInscricao = function (data) {
+    let montarEmail = "";
+    let name
+   
+    data.forEach(element => {  
+       if (element[0] == 'nome'){
+           name = element[1];
+       }
+       montarEmail += '<p style="color: #084553; font-weight:800; text-align:left; font-size: 15px; margin-bottom: 10px!important">'+ element[0] +': <span style=color:"#E9E9E9 !important";> '+ element[1] + '</span></p>';
+           
+   });
+
     let body = `<body>
     <div style="padding:0;margin:0">
         <table style="width: 100%; background: #edf3f8" border="0">
@@ -197,11 +208,7 @@ let emailInscricao= function (id, name, email, document, tel) {
                         <tr style="background: #e1e5e8;">
                             <td style="padding: 10px 10px 10px 10px; border-top: 1px solid #084553;">
                                 
-                                <p style="color: #084553; font-weight:800; text-align:left; font-size: 15px; margin-bottom: 10px!important">Número de inscrição: ` + id + `</p>
-                                <p style="color: #084553; font-weight:800; text-align:left; font-size: 15px; margin-bottom: 10px!important">Nome: ` + name + `</p>
-                                <p style="color: #084553; font-weight:800; text-align:left; font-size: 15px; margin-bottom: 10px!important">E-mail: ` + email + `</p>
-                                <p style="color: #084553; font-weight:800; text-align:left; font-size: 15px; margin-bottom: 10px!important">Número do documento: ` + document + `</p>
-                                <p style="color: #084553; font-weight:800; text-align:left; font-size: 15px; margin-bottom: 10px!important">Telefone: ` + tel + `</p>
+                                ` +montarEmail+ `
                                 <div style="margin-top: -5px">
                                     <table style="width:100%" cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
@@ -230,7 +237,7 @@ let emailInscricao= function (id, name, email, document, tel) {
                                     <!-- cabeçalho -->
                                     <tr style="background: #084553;">
                                         <td style="padding: 10px 10px 10px 30px; border-top-right-radius: 5px;border-top-left-radius: 5px;">
-                                            <p style="color: #fff; padding:0; margin: 0; font-weight:800; text-align:center; font-size: 28px;">Atenção</p>
+                                            <p style="color: #fff; padding:0; margin: 0; font-weight:800; text-align:center; font-size: 28px;">Atenção!</p>
                                         </td>
                                     </tr>
     
@@ -280,7 +287,8 @@ let emailInscricao= function (id, name, email, document, tel) {
 }
 
 module.exports = {
-    emailTemplate: emailTemplate
+    emailTemplate: emailTemplate,
+    emailInscricao: emailInscricao
 };
 
 
