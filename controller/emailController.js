@@ -1,6 +1,6 @@
 const nodemailer     = require('nodemailer');
 const emailTemplates = require('./../emailTemplates');
-const _ = require('lodash');
+const _              = require('lodash');
 
 let config = {}
 config.password = 'quick2018';

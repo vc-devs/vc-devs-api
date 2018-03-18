@@ -14,6 +14,9 @@ const provaModel = require('./model/provas');
 const gabarito      = require('./routes/gabaritosRoute');
 const gabaritoModel = require('./model/gabaritos');
 
+const examLocation      = require('./routes/examLocationRoute');
+const examLocationModel = require('./model/examLocation');
+
 const image      = require('./routes/imagesRoute');
 const imageModel = require('./model/imagens');
 
@@ -46,6 +49,7 @@ app.use('/', prova);
 app.use('/', gabarito);
 app.use('/', image);
 app.use('/', edital);
+app.use('/', examLocation);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

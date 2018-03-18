@@ -1,8 +1,7 @@
 'use strict';
-const _ = require('lodash');
 const gabaritoModel = require('./../model/gabaritos');
-const mongoose = require('mongoose'),
-    Gabarito = mongoose.model('gabarito');
+const mongoose      = require('mongoose'),
+    Gabarito        = mongoose.model('gabarito');
 
 function getGabaritos(req, res, next) {
     Gabarito.find( function (err, result) {

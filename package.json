@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "version": "0.1.0",
+  "name": "vc-devs-api",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",

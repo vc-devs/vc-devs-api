@@ -1,5 +1,4 @@
 'use strict';
-
 const imageModel = require('./../model/imagens');
 const mongoose   = require('mongoose'),
     Image = mongoose.model('images');

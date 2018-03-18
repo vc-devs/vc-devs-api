@@ -1,8 +1,7 @@
 'use strict';
-const _ = require('lodash');
 const provaModel = require('./../model/provas');
-const mongoose = require('mongoose'),
-    Prova = mongoose.model('provas');
+const mongoose   = require('mongoose'),
+    Prova        = mongoose.model('provas');
 
 function getProvas(req, res, next) {
     Prova.find( function (err, result) {
