@@ -16,9 +16,10 @@
     "jade": "~1.11.0",
     "lodash": "^4.17.5",
     "mongoose": "^5.0.2",
+    "mongoose-paginate": "^5.0.3",
     "morgan": "~1.9.0",
     "nodemailer": "^4.4.2",
-    "nodemon": "^1.15.1",
+    "nodemon": "^1.17.2",
     "pg-promise": "^7.3.2",
     "serve-favicon": "~2.4.5"
   }
