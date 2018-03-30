@@ -1,5 +1,5 @@
 'use strict';
-const gabaritoModel = require('./../model/editais');
+const editaisModel  = require('../model/editais');
 const mongoose      = require('mongoose'),
     Edital          = mongoose.model('edital');
 

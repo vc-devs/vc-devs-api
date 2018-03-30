@@ -1,8 +1,8 @@
 const express = require('express');
 const router  = express.Router();
-const edital  = require('./../controller/editalController');
+const gabarito   = require('../controller/gabaritoController');
 
 /* GET contact listing. */
-router.post('/api/edital', edital.getEditais);
+router.post('/api/gabarito', gabarito.getGabaritos);
 
 module.exports = router;

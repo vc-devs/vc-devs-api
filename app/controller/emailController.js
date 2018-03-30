@@ -1,5 +1,5 @@
 const nodemailer     = require('nodemailer');
-const emailTemplates = require('./../emailTemplates');
+const emailTemplates = require('../../emailTemplates');
 const _              = require('lodash');
 
 let config = {}

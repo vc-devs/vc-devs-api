@@ -1,5 +1,5 @@
 'use strict';
-const examLocation = require('./../model/examLocation');
+const examLocation = require('../model/examLocation');
 const mongoose     = require('mongoose'),
     ExamLocation   = mongoose.model('examLocation');
 

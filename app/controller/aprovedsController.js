@@ -1,10 +1,10 @@
 'use strict';
-const gabaritoModel = require('./../model/gabaritos');
+const aprovedsModel = require('../model/aproveds');
 const mongoose      = require('mongoose'),
-    Gabarito        = mongoose.model('gabarito');
+    Aproveds        = mongoose.model('aproveds');
 
-function getGabaritos(req, res, next) {
-    Gabarito.find( function (err, result) {
+function getAproveds (req, res, next) {
+    Aproveds.find(function (err, result) {
         if (err) {
             next(err);
         } else {
@@ -17,5 +17,5 @@ function getGabaritos(req, res, next) {
 }
 
 module.exports = {
-    getGabaritos: getGabaritos,
+    getAproveds:  getAproveds
 };

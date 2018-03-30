@@ -1,5 +1,5 @@
 'use strict';
-const provaModel = require('./../model/provas');
+const provaModel = require('../model/provas');
 const mongoose   = require('mongoose'),
     Prova        = mongoose.model('provas');
 
