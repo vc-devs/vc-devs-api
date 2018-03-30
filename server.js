@@ -23,13 +23,16 @@ const imageModel = require('./model/imagens');
 const edital      = require('./routes/editaisRoute');
 const editalModel = require('./model/editais');
 
+const aproveds      = require('./routes/aprovedsRoute');
+const aprovedsModel = require('./model/aproveds');
+
 const cors = require('cors')
 const app  = express();
 
 //CORS V02
 app.use(cors())
 
-mongoose.connect('mongodb://vc_database:vc_database@ds243768.mlab.com:43768/heroku_dnhx3mcv');
+mongoose.connect('mongodb://vc_database_whrite:vc_database_whrite@ds243768.mlab.com:43768/heroku_dnhx3mcv');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -50,6 +53,7 @@ app.use('/', gabarito);
 app.use('/', image);
 app.use('/', edital);
 app.use('/', examLocation);
+app.use('/', aproveds);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

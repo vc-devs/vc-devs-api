@@ -1,10 +1,10 @@
 'use strict';
-const editaisModel  = require('./../model/editais');
+const aprovedsModel = require('./../model/aproveds');
 const mongoose      = require('mongoose'),
-    Edital          = mongoose.model('edital');
+    Aproveds        = mongoose.model('aproveds');
 
-function getEditais(req, res, next) {
-    Edital.find( function (err, result) {
+function getAproveds (req, res, next) {
+    Aproveds.find(function (err, result) {
         if (err) {
             next(err);
         } else {
@@ -17,5 +17,5 @@ function getEditais(req, res, next) {
 }
 
 module.exports = {
-    getEditais: getEditais,
+    getAproveds:  getAproveds
 };
